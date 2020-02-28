@@ -1,9 +1,61 @@
-button
-	padding: 50px
-	text-transform: uppercase
-	background: none
-	border: 1px solid $bluecolor
-	outline: none
-	&:focus
-		outline: none
-	
+.buttons-card
+	button
+		height: 44px
+		width: 100%
+		border-radius: 3px
+		font-weight: bold
+		&:first-child
+			margin-bottom: 12px
+			margin-top: 17px
+	.reserve
+		background: $darkyellow
+		color: $white
+		transition: 0.3s
+		border: none
+		&:hover
+			background: #B76D00
+	.detail
+		border: 1px solid $darkyellow
+		background: none
+		color: $darkyellow
+		transition: 0.3s
+		&:hover
+			border: 3px solid $darkyellow
+
+.callback-button
+	margin: 
+		top: 223px
+		bottom: 206px
+	position: relative
+	button
+		padding: 20px 44px
+		height: 53px
+		background: $white
+		border-radius: 3px
+		color: #000
+		font-size: 11px
+		font-weight: 800
+		text-transform: uppercase
+		border: none
+		letter-spacing: 3px
+		transition: 0.3s
+		&:hover
+			background: $black
+			color: $white
+	&::before
+		content: ''
+		width: 34%
+		height: 3px
+		background: $white
+		position: absolute
+		top: 50%
+		left: 0
+	&::after
+		content: ''
+		width: 34%
+		height: 3px
+		background: $white
+		position: absolute
+		top: 50%
+		right: 0
+		z-index: 0

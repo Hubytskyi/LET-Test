@@ -1,0 +1,89 @@
+.main-menu-mobile
+	position: relative
+	z-index: 43
+	.burger
+		.burger-btn
+			cursor: pointer
+			// background: $white
+			width: 60px
+			height: 33px
+			position: absolute
+			right: 54px
+			top: 44px
+			transition: 0.3s
+			&::after
+				content: ''
+				background: $white
+				width: 60px
+				height: 3px
+				position: absolute
+				right: 0
+				top: 10px
+			&::before
+				content: ''
+				background: $white
+				width: 60px
+				height: 3px
+				position: absolute
+				right: 0
+				top: 20px
+
+.menu-block-open__visible
+	transform: translateX(0)!important
+	display: flex!important
+
+.menu-block-open
+	transform: translateX(100%)
+	z-index: 42
+	background: $lightbrown
+	position: absolute
+	right: 0
+	top: 0
+	height: 100vh
+	width: 100%
+	transition: 0.3s
+	align-items: flex-end
+	justify-content: center
+	flex-direction: column
+	text-align: right
+	font-size: 16px
+	display: none
+	.select
+		color: $white
+	.selected::after
+		background: none
+
+.burger-btn::before,
+.burger-btn::after
+	transition: 0.3s
+
+.burger.open .burger-btn::before
+	transform: rotate(45deg) translate(-6px, -17px)
+
+.burger.open .burger-btn::after
+	transform: rotate(-45deg) translateX(10px)
+
+#mobile-ul
+	border-bottom: 1px solid $white
+	margin-bottom: 12px
+	padding-bottom: 6px
+
+.mobile-cities,
+.mobile-cities__btn
+	color: $white
+
+.mobile-cities__btn
+	cursor: pointer
+	transition: 0.3s
+
+.mobile-cities
+	transform: translateX(100%)
+	z-index: 42
+	transition: 0.3s
+	display: none
+	font-weight: 400
+	letter-spacing: 2px
+
+.mobile-cities__open
+	transform: translateX(0)
+	display: block

@@ -1,0 +1,94 @@
+footer
+	background: url(../images/dest/bg-footer.png) #342d34
+	background-blend-mode: overlay
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding-top: 84px
+	color: $footertext
+	letter-spacing: 1px
+	ul
+		padding: 0
+	a
+		color: $footertext
+		font-size: 14px
+		line-height: 30px
+		font-weight: 500
+		&:hover
+			color: $footertext
+	a.footer-logo
+		display: flex
+		align-items: center
+		.footer-logo__block
+			padding-left: 12px
+			color: #A97456
+			font-size: 27px
+			line-height: 10px
+			span
+				font-size: 13px
+				line-height: 0
+				padding-top: 5px
+
+.footer-phones
+	position: relative
+	padding-left: 34px
+	margin-top: 47px
+	line-height: 24px
+	font-size: 16px
+	font-weight: 500
+	ul
+		li
+			margin-bottom: 8px
+	&::before
+		content: ''
+		background-image: url(../images/dest/footer-phone.png)
+		background-repeat: no-repeat
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+.footer-email
+	position: relative
+	padding: 12px 0 17px 34px
+	&::before
+		content: ''
+		background-image: url(../images/dest/mail.png)
+		background-repeat: no-repeat
+		position: absolute
+		top: 50%
+		transform: translateY(-10px)
+		left: 0
+		width: 100%
+		height: 100%
+
+.offer
+	padding-left: 34px
+	a
+		border-bottom: 1px solid $footertext
+		padding-bottom: 4px
+
+.development
+	padding: 12px 0
+	font-size: 14px
+	line-height: 20px
+	letter-spacing: 0
+	font-weight: normal
+	a
+		span
+			font-weight: bold
+
+.footer-icon
+	margin-bottom: 16px
+
+.footer-cat
+	text-align: center
+	h5
+		font-size: 16px
+		line-height: 20px
+		font-weight: bold
+		color: $white
+		letter-spacing: 3px
+		text-transform: uppercase
+		margin-bottom: 12px

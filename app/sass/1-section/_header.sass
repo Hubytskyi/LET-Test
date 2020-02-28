@@ -1,2 +1,260 @@
 header
-	max-width: 700px
+	background-image: url(../images/dest/image147.png)
+	background-position: center
+	background-size: cover
+	color: $white
+	position: relative
+	height: 100vh
+	.container
+		position: relative
+		height: 100%
+
+.top__line
+	display: flex
+	align-items: center
+	color: $white
+	border-bottom: 1px solid $lightbrown
+	ul
+		display: flex
+		justify-content: space-between
+		width: 100%
+		li
+			height: 50px
+			display: flex
+			align-items: center
+			// padding: 0 12px
+			img:last-child
+				padding: 0 3px
+			&.header__pay
+				transition: 0.3s
+				background: $darkbrown
+				color: $darkyellow
+				cursor: pointer
+				padding: 0 12px
+				margin-right: -12px
+				&:hover
+					background: $darkyellow
+					color: $darkbrown
+			.search
+				border: none
+				background: $lightbrown
+				height: 50px
+				padding: 12px
+				// width: 313px
+				&::placeholder
+					color: $darkbrown
+					font-weight: 600
+					font-size: 14px
+
+.top__logo
+	font-size: 42px
+	line-height: 42px
+	height: 124px
+	display: flex
+	justify-content: center
+	a
+		display: flex
+		align-items: center
+		color: #A97456
+		z-index: 2
+	.logo__descr
+		line-height: 31px
+		span
+			&:last-child
+				font-size: 20px
+				color: #BD7F5C
+
+.main-menu
+	font-size: 18px
+	line-height: 28px
+	padding:
+		top: 12px
+		bottom: 12px
+	nav
+		width: 100%
+		#ul
+			display: flex
+			justify-content: space-between
+			li
+				cursor: pointer
+				text-align: center
+
+.header__slider
+	font-size: 36px
+	line-height: 40px
+	font-weight: 500
+	h1
+		color: $white
+		font-size: 48px
+		line-height: 56px
+		text-transform: uppercase
+		font-weight: 800
+		margin: 0
+		padding-bottom: 6px
+	span.header__slider-left-descr
+		font-weight: 500
+		display: block
+		padding: 6px 0
+
+.top__location
+	display: flex
+	align-items: center
+	height: 51px
+	ul
+		display: flex
+		justify-content: space-between
+		width: 100%
+		z-index: 2
+		.item__location
+			cursor: pointer
+			position: relative
+			background: url(../images/dest/arrow-down.png)
+			background-repeat: no-repeat
+			background-position: 100% 55%
+			padding-right: 14px
+			transition: 0.3s
+			// &::after
+			// 	content: ''
+			// 	background-image: url(../images/dest/arrow-down.png)
+			// 	background-repeat: no-repeat
+			// 	position: absolute
+			// 	top: 50%
+			// 	transform: translateY(-1px)
+			// 	width: 100%
+			// 	height: 100%
+			// 	margin-left: 6px
+
+.header__line-top
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	height: 174px
+	background: rgba(0,0,0,.5)
+	z-index: 0
+
+.header__line-bottom
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	height: 51px
+	background: rgba(0,0,0,.5)
+	z-index: 0
+
+.header__slider
+	margin-bottom: 24px
+	display: flex
+	align-items: center
+	.slider-item
+		position: relative
+		img
+			width: 100%
+		.slider-item__content
+			position: absolute
+			bottom: 0
+			padding: 12px 24px
+			p
+				font-size: 28px
+				line-height: 34px
+				margin-bottom: 0
+				max-width: 312px
+			span
+				font-size: 14px
+				line-height: 22px
+				position: relative
+				left: 42px
+				&::before
+					content: ''
+					background: $white
+					height: 2px
+					width: 30px
+					position: absolute
+					left: -42px
+					top: 50%
+					transform: translateY(-50%)
+
+.header-content-block
+	display: flex
+	flex-direction: column
+	align-content: space-between
+	justify-content: space-between
+	position: absolute
+	top: 173px
+	bottom: 0
+	width: 100%
+
+label
+	margin-bottom: 0
+	cursor: pointer
+
+.select-box
+	display: flex
+	flex-direction: column
+
+.select-box .options-container
+	width: 100%
+	max-height: 0
+	opacity: 0
+	transition: 0.3s
+	order: 1
+
+.select-box .option,
+.selected
+	cursor: pointer
+
+.select-box .option .radio
+	display: none
+
+.select-box .options-container.active__radio
+	max-height: 35px
+	opacity: 1
+
+.select-box .options-container.active__radio + .selected::after
+	transform: rotateX(180deg)
+	top: -6px
+
+.selected
+	position: relative
+	order: 0
+
+.selected::after
+	content: ''
+	background: url(../images/dest/arrow-down.png)
+	background-size: contain
+	background-repeat: no-repeat
+	position: absolute
+	height: 100%
+	width: 10px
+	transform: translateY(-2px)
+	top: 50%
+	transition: 0.3s
+
+.hide
+	display: none
+
+.sub-menu
+	opacity: 0
+	z-index: -1
+	position: absolute
+	bottom: 0
+	transition: 0.3s
+	margin-bottom: 39px
+	min-width: 300px
+	ul
+		li
+			padding: 12px 12px
+			background: $lightbrown
+			&:hover
+				background: $darkbrown
+
+.main-manu__drop-down
+	flex-direction: column
+
+.top__location ul .item__location:hover .sub-menu
+	opacity: 1
+	z-index: 5
+
+.top__location ul .item__location:hover
+	background-image: url(../images/dest/arrow-top.png)
+

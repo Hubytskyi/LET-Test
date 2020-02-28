@@ -2,18 +2,23 @@
 
 @import "node_modules/bootstrap/scss/bootstrap-reboot.scss" // Bootstrap Reboot collection
 @import "node_modules/bootstrap/scss/mixins/_breakpoints.scss" // Bootstrap Breakpoints mixin
-// @import "node_modules/bootstrap/scss/bootstrap-grid.scss" // Optional Bootstrap Grid
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss" // Optional Bootstrap Grid
 // @import "node_modules/bootstrap/scss/utilities/_sizing.scss" // Optional Bootstrap Utilites
 
 
 // USER VARIABLES SECTION
 
-$accent:     #FFF498 // Accent Color
-$fontsize:   16px // Body Font Size
-$textcolor:  #333 // Text Color
-$lightcolor:  #F5F5F5 // Text Color / BG Color
-$bluecolor:  #0F1626 // Blue Color
-$mainfamily: montserratregular // Main Font Family
+$red:     #E44242
+$black:  #333
+$grey: #777
+$white:  #fff
+$darkbrown:  #4A1F07
+$lightbrown: #8E6954
+$darkyellow: #B78131
+$green: #009020
+$footertext: #9B989B
+$fontsize:   16px
+$mainfamily: Montserrat
 
 // Bootstrap compatible gutter variable => $gutter
 
@@ -30,22 +35,12 @@ $gutter: $grid-gutter-width
 		font-weight: $f-weight
 		src: url($f-url) format('woff2')
 
-@include font('montserratblack', normal, normal, '../fonts/montserrat-black-webfont.woff2')
-@include font('montserratblack', normal, normal, '../fonts/montserrat-black-webfont.woff')
-@include font('montserratbold', normal, normal, '../fonts/montserrat-bold-webfont.woff2')
-@include font('montserratbold', normal, normal, '../fonts/montserrat-bold-webfont.woff')
-@include font('montserratlight', normal, normal, '../fonts/montserrat-light-webfont.woff2')
-@include font('montserratlight', normal, normal, '../fonts/montserrat-light-webfont.woff')
-@include font('montserratmedium', normal, normal, '../fonts/montserrat-medium-webfont.woff2')
-@include font('montserratmedium', normal, normal, '../fonts/montserrat-medium-webfont.woff')
-@include font('montserratregular', normal, normal, '../fonts/montserrat-regular-webfont.woff2')
-@include font('montserratregular', normal, normal, '../fonts/montserrat-regular-webfont.woff')
-@include font('montserratsemibold', normal, normal, '../fonts/montserrat-semibold-webfont.woff2')
-@include font('montserratsemibold', normal, normal, '../fonts/montserrat-semibold-webfont.woff')
-@include font('montserratthin', normal, normal, '../fonts/montserrat-thin-webfont.woff2')
-@include font('montserratthin', normal, normal, '../fonts/montserrat-thin-webfont.woff')
-
-
+@include font('Montserrat', normal, 300, '../fonts/montserrat-light-webfont.woff2')
+@include font('Montserrat', normal, 400, '../fonts/montserrat-regular-webfont.woff2')
+@include font('Montserrat', normal, 500, '../fonts/montserrat-medium-webfont.woff2')
+@include font('Montserrat', normal, 600, '../fonts/montserrat-semibold-webfont.woff2')
+@include font('Montserrat', normal, 700, '../fonts/montserrat-bold-webfont.woff2')
+@include font('Montserrat', normal, 900, '../fonts/montserrat-black-webfont.woff2')
 
 // GENERAL DOCUMENT STYLES
 
@@ -63,24 +58,27 @@ $gutter: $grid-gutter-width
 
 ::-webkit-scrollbar-thumb
 	width: 3px
-	background: #0F1626
+	background: $black
 
 ::-webkit-scrollbar-corner
 	width: 3px
 
 ::placeholder
-	color: #666
+	color: #DBDBDB
 
 ::selection
-	background-color: $accent
-	color: $bluecolor
+	background-color: $darkyellow
+	color: $black
 
 input, textarea
 	outline: none
 	&:focus:required:invalid
-		border-color: red
+		border-color: $red
 	&:required:valid
-		border-color: green
+		border-color: $green
+
+*
+	box-sizing: border-box
 
 body
 	font-size: $fontsize
@@ -89,7 +87,21 @@ body
 	line-height: 1.65
 	font-family: $mainfamily
 	overflow-x: hidden
-	color: $textcolor
-	background-color: $lightcolor
+	color: $black
+	background-color: $white
+	font-weight: 600
 
+ul
+	list-style: none
+	margin: 0
+	padding: 0 15px
 
+a
+	text-decoration: none
+	color: $white
+	&:hover
+		color: $white
+		text-decoration: none
+
+h1
+	color: $black

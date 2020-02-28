@@ -4,26 +4,865 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>HUBYTSKYI</title>
+	<title>Всі санаторії</title>
 	<meta name="description" content="Start template 1.0">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="images/favicon.ico">
 	<meta property="og:image" content="images/dest/preview.jpg">
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap&subset=cyrillic,cyrillic-ext"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper/swiper.css">
 	<link rel="stylesheet" href="css/app.min.css">
 
 </head>
 
 <body>
-
-	<div class="container" style="margin: auto; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-image: url(images/dest/bg_1.jpg); background-size: cover;background-position: center;">
-		<div class="content" style="max-width: 700px; color: #fff; background-color: rgba(0,0,0,.8); padding: 50px;">
-			<h2>Start template 1.0</h2>
-			<p><strong>Gulp:</strong> sass, clean-css, concat, browser-sync, uglify, autoprefixer, imagemin, newer, rsync, del</p>
+	
+	<div class="mobile-menu">
+		<div class="main-menu-mobile">
+			<span class="burger">
+				<span class="burger-btn"></span>
+			</span>
+		</div>
+		<div class="menu-block-open">
+			<nav>
+				<ul id="mobile-ul">
+					<li><a href="#">Санаторії та готелі</a></li>
+					<li><a href="#">Тури та екскурсії</a></li>
+					<li><a href="#">Оплата онлайн</a></li>
+					<li><a href="#">Дитячі табори</a></li>
+					<li><a href="#">Підбір туру</a></li>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Про компанію</a></li>
+				</ul>
+			</nav>
+			<ul>
+				<li class="mobile-cities__btn"><span class="arrow">⟵</span> Міста</li>
+				<ul class="mobile-cities">
+					<li><a href="#">Трускавець</a></li>
+					<li><a href="#">Східниця</a></li>
+					<li><a href="#">Моршин</a></li>
+					<li><a href="#">Закарпаття</a></li>
+					<li><a href="#">Хмельник</a></li>
+					<li><a href="#">Миргород</a></li>
+					<li><a href="#">Сатанів</a></li>
+					<li><a href="#">Карпати</a></li>
+					<li><a href="#">Львів</a></li>
+				</ul>
+				<li class="select">
+					<div class="select-box">
+						<div class="options-container">
+							<div class="option">
+								<input type="radio" class="radio" id="ua" name="language">
+								<label for="ua">UA</label>
+							</div>
+							<div class="option">
+								<input type="radio" class="radio" id="ru" name="language">
+								<label for="ru">RU</label>
+							</div>
+						</div>
+						<div class="selected">
+							UA
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
-	
-	
+
+	<header>
+		<div class="header__line-top"></div>
+		<div class="container">
+
+			<div class="row top__line">
+				<ul>
+					<li><img src="images/dest/Group182.png" alt=""><img src="images/dest/Group.png" alt="phone"> +38 (097) 057
+						7388</li>
+					<li><img src="images/dest/VODAFONE.png" alt=""><img src="images/dest/Group.png" alt="phone">+38 (066) 679 1174
+					</li>
+					<li><img src="images/dest/lifecell.png" alt=""><img src="images/dest/Group.png" alt="phone">+38 (093) 686 8677
+					</li>
+					<li class="header__pay"><img src="images/dest/Group56.png" alt="pay"> Оплата Онлайн</li>
+					<li><input class="search" type="search" placeholder="Пошук по турам"></li>
+					<li class="select">
+						<div class="select-box">
+							<div class="options-container">
+								<div class="option">
+									<input type="radio" class="radio" id="ua" name="language">
+									<label for="ua">UA</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="ru" name="language">
+									<label for="ru">RU</label>
+								</div>
+							</div>
+							<div class="selected">
+								UA
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="row top__logo">
+				<a href="#">
+					<img class="logo" src="images/dest/Group70.png" alt="logo">
+					<div class="logo__descr">
+						vsesanatorii<span><img src="images/dest/Vector.png" alt="dot"></span>com</br>
+						<span>Бронювання санаторіїв та готелей</span>
+					</div>
+				</a>
+			</div>
+			<div class="header-content-block">
+				<div class="row main-menu">
+					<nav>
+						<ul id="ul">
+							<li><a href="#">Санаторії та готелі</a></li>
+							<li><a href="#">Тури та екскурсії</a></li>
+							<li><a href="#">Оплата онлайн</a></li>
+							<li><a href="#">Дитячі табори</a></li>
+							<li><a href="#">Підбір туру</a></li>
+							<li><a href="#">Новини</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Про компанію</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="row header__slider">
+					<div class="col-lg-6 header__slider-col">
+						<h1>ПУТІВКИ НА КРАЩІ КУРОРТИ УКРАЇНИ</h1>
+						<span class="header__slider-left-descr">Безкоштовна консультація</span>
+						<span class="header__slider-left-descr">Офіційні ціни</span>
+					</div>
+					<div class="col-lg-6">
+						<!-- Slider main container -->
+						<div class="swiper-container">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<div class="slider-item">
+										<div class="slider-item__block">
+											<img src="images/dest/image18.png" alt="1">
+											<div class="slider-item__content">
+												<a href="#">
+													<p>Чому варто обирати санаторії Карпат?</p>
+													<span>Дізнатись більше</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slider-item">
+										<div class="slider-item__block">
+											<img src="images/dest/image18.png" alt="1">
+											<div class="slider-item__content">
+												<a href="#">
+													<p>Чому варто обирати санаторії Карпат?</p>
+													<span>Дізнатись більше</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slider-item">
+										<div class="slider-item__block">
+											<img src="images/dest/image18.png" alt="1">
+											<div class="slider-item__content">
+												<a href="#">
+													<p>Чому варто обирати санаторії Карпат?</p>
+													<span>Дізнатись більше</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="row top__location">
+					<ul>
+						<li class="item__location">Трускавець
+							<div class="sub-menu">
+								<ul class="main-manu__drop-down">
+									<a href="#">
+										<li>Віддих у трускавці</li>
+									</a>
+									<a href="#">
+										<li>Найкращі санаторії</li>
+									</a>
+									<a href="#">
+										<li>Санаторії з басейном</li>
+									</a>
+									<a href="#">
+										<li>Всі санаторії трускавця</li>
+									</a>
+									<a href="#">
+										<li>Готелі Трускавця</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+						<li class="item__location">Східниця
+							<div class="sub-menu">
+								<ul class="main-manu__drop-down">
+									<a href="#">
+										<li>Віддих у трускавці</li>
+									</a>
+									<a href="#">
+										<li>Найкращі санаторії</li>
+									</a>
+									<a href="#">
+										<li>Санаторії з басейном</li>
+									</a>
+									<a href="#">
+										<li>Всі санаторії трускавця</li>
+									</a>
+									<a href="#">
+										<li>Готелі Трускавця</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+						<li class="item__location">Моршин
+							<div class="sub-menu">
+								<ul class="main-manu__drop-down">
+									<a href="#">
+										<li>Віддих у трускавці</li>
+									</a>
+									<a href="#">
+										<li>Найкращі санаторії</li>
+									</a>
+									<a href="#">
+										<li>Санаторії з басейном</li>
+									</a>
+									<a href="#">
+										<li>Всі санаторії трускавця</li>
+									</a>
+									<a href="#">
+										<li>Готелі Трускавця</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+						<li class="item__location">Закарпаття
+							<div class="sub-menu">
+								<ul class="main-manu__drop-down">
+									<a href="#">
+										<li>Віддих у трускавці</li>
+									</a>
+									<a href="#">
+										<li>Найкращі санаторії</li>
+									</a>
+									<a href="#">
+										<li>Санаторії з басейном</li>
+									</a>
+									<a href="#">
+										<li>Всі санаторії трускавця</li>
+									</a>
+									<a href="#">
+										<li>Готелі Трускавця</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+						<li class="item__location">Хмельник
+							<div class="sub-menu">
+								<ul class="main-manu__drop-down">
+									<a href="#">
+										<li>Віддих у трускавці</li>
+									</a>
+									<a href="#">
+										<li>Найкращі санаторії</li>
+									</a>
+									<a href="#">
+										<li>Санаторії з басейном</li>
+									</a>
+									<a href="#">
+										<li>Всі санаторії трускавця</li>
+									</a>
+									<a href="#">
+										<li>Готелі Трускавця</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+						<li class="item__location">Миргород
+							<div class="sub-menu">
+								<ul class="main-manu__drop-down">
+									<a href="#">
+										<li>Віддих у трускавці</li>
+									</a>
+									<a href="#">
+										<li>Найкращі санаторії</li>
+									</a>
+									<a href="#">
+										<li>Санаторії з басейном</li>
+									</a>
+									<a href="#">
+										<li>Всі санаторії трускавця</li>
+									</a>
+									<a href="#">
+										<li>Готелі Трускавця</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+						<li class="item__location">Сатанів
+							<div class="sub-menu">
+								<ul class="main-manu__drop-down">
+									<a href="#">
+										<li>Віддих у трускавці</li>
+									</a>
+									<a href="#">
+										<li>Найкращі санаторії</li>
+									</a>
+									<a href="#">
+										<li>Санаторії з басейном</li>
+									</a>
+									<a href="#">
+										<li>Всі санаторії трускавця</li>
+									</a>
+									<a href="#">
+										<li>Готелі Трускавця</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+						<li class="item__location">Карпати
+							<div class="sub-menu">
+								<ul class="main-manu__drop-down">
+									<a href="#">
+										<li>Віддих у трускавці</li>
+									</a>
+									<a href="#">
+										<li>Найкращі санаторії</li>
+									</a>
+									<a href="#">
+										<li>Санаторії з басейном</li>
+									</a>
+									<a href="#">
+										<li>Всі санаторії трускавця</li>
+									</a>
+									<a href="#">
+										<li>Готелі Трускавця</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+						<li class="item__location">Львів
+							<div class="sub-menu">
+								<ul class="main-manu__drop-down">
+									<a href="#">
+										<li>Віддих у трускавці</li>
+									</a>
+									<a href="#">
+										<li>Найкращі санаторії</li>
+									</a>
+									<a href="#">
+										<li>Санаторії з басейном</li>
+									</a>
+									<a href="#">
+										<li>Всі санаторії трускавця</li>
+									</a>
+									<a href="#">
+										<li>Готелі Трускавця</li>
+									</a>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header__line-bottom"></div>
+	</header>
+
+	<section class="category">
+		<div class="container">
+			<div class="row breadcrumbs">
+				<ul>
+					<li><a href="#">Головна</a></li>
+					<li><a href="#">Трускавець</a></li>
+					<li><a href="#">Санаторії Трускавця</a></li>
+				</ul>
+			</div>
+			<div class="row banner">
+				<h1 class="category-header">Санаторії Трускавця</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="category-item">
+						<img src="images/dest/image118.png" alt="">
+						<div class="block-icons">
+							<ul>
+								<li><img src="images/dest/cutlery.png" alt="Безкоштовні сніданки" title="Безкоштовні сніданки"></li>
+								<li><img src="images/dest/abc-block.png" alt="Додаткові послуги" title="Додаткові послуги"></li>
+								<li><img src="images/dest/pool.png" alt="Зона SPA" title="Зона SPA"></li>
+								<li><img src="images/dest/wifi.png" alt="Безкоштовний Wi-Fi" title="Безкоштовний Wi-Fi"></li>
+							</ul>
+						</div>
+						<div class="addit-info">
+							<span class="best-hotels"><a href="#">Найкращі санаторії</a></span>
+							<span class="sale"><a href="#">Знижка 5%</a></span>
+						</div>
+						<h3><a href="#">Міротель</a></h3>
+						<p>Новий готельний комплекс Міротель (Mirotel)​ Трускавець відкрив свої двері в 2012 році </p>
+						<span class="price">Від 2610 грн</span>
+						<!-- <span class="new-price"></span>
+						<span class="old-price"></span> -->
+						<span class="persons">За 1 людину</span>
+						<div class="buttons-card">
+							<button class="reserve">Забронювати тур</button>
+							<button class="detail">Детальніше</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="seo-content">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10">
+					<h1>Тури Трускавця (SEO Текст)</h1>
+					<p>При виборі санаторію важливим моментом є відгуки тих людей, які вже відпочивали в Трускавці і можуть
+						поділитися своїми враженнями про санаторії, вілли або готелі Трускавця. Якщо ви збираєтеся на відпочинок до
+						Трускавця вперше, і не знаєте, який санаторій краще вибрати, подивіться відгуки про санаторії Трускавця, які
+						є на сторінках з описом кожної санаторію, готелю і вілли. Для нас дуже важливе Ваша думка, оцінка, а іноді й
+						обгрунтована критика! Мі сподіваємося, що відгуки про санаторії Трускавця на нашому сайті допоможуть Вам
+						зробити правильний вибір. При виборі санаторію важливим моментом є відгуки тих людей, які вже відпочивали в
+						Трускавці і можуть поділитися своїми враженнями про санаторії, вілли або готелі Трускавця. Якщо ви
+						збираєтеся на відпочинок до Трускавця вперше, і не знаєте, який санаторій краще вибрати, подивіться відгуки
+						про санаторії Трускавця, які є на сторінках з описом кожної санаторію, готелю і вілли. Для нас дуже важливе
+						Ваша думка, оцінка, а іноді й обгрунтована критика! Мі сподіваємося, що відгуки про санаторії Трускавця на
+						нашому сайті допоможуть Вам зробити правильний вибір.При виборі санаторію важливим моментом є відгуки тих
+						людей, які вже відпочивали в Трускавці і можуть поділитися своїми враженнями про санаторії, вілли або готелі
+						Трускавця. Якщо ви збираєтеся на відпочинок до Трускавця вперше, і не знаєте, який санаторій краще вибрати,
+						подивіться відгуки про санаторії Трускавця, які є на сторінках з описом кожної санаторію, готелю і вілли.
+						Для нас дуже важливе Ваша думка, оцінка, а іноді й обгрунтована критика! Мі сподіваємося, що відгуки про
+						санаторії Трускавця на нашому сайті допоможуть Вам зробити правильний вибір.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="callback">
+		<div class="container">
+			<div class="row callback-row">
+				<div class="callback-content">
+					<h1>Потрібна допомога у виборі
+						санаторію чи пансіонату?</h1>
+					<span>Наші спеціалісти завжди на зв’язку та готові
+						допомогти з вибором!</span>
+					<span class="phones">+380 (097) 057 7388</br>
+						+380 (066) 679 1174</br>
+						+380 (093) 686 8677</br>
+					</span>
+				</div>
+				<div class="callback-button">
+					<button>ЗАМОВИТИ ЗВОРОТНІЙ ДЗВІНОК</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 footer-left-block">
+					<a class="footer-logo" href="#">
+						<img class="footer-logo" src="images/dest/Group70.png" alt="logo">
+						<div class="footer-logo__block">
+							vsesanatorii<span><img src="images/dest/Vector.png" alt="dot"></span>com</br>
+							<span>Бронювання санаторіїв та готелей</span>
+						</div>
+					</a>
+					<div class="footer-phones">
+						<ul>
+							<li>+38 (097) 057 7388</li>
+							<li>+38 (066) 679 1174</li>
+							<li>+38 (093) 686 8677</li>
+						</ul>
+					</div>
+					<div class="footer-email">
+						<span><a href="mailto:info@vsesanatorii.com">info@vsesanatorii.com</a></span>
+					</div>
+					<div class="offer">
+						<a href="#">Договір-оферта</a>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<div class="footer-about footer-cat">
+						<div class="footer-icon"><img src="images/dest/globe.png" alt="globe"></div>
+						<h5>Про нас</h5>
+						<ul>
+							<li><a href="#">Новини</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Про компанію</a></li>
+							<li><a href="#">Оплата онлайн</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="footer-tours footer-cat">
+						<div class="footer-icon"><img src="images/dest/flag.png" alt="flag"></div>
+						<h5>Тури</h5>
+						<ul>
+							<li><a href="#">Трускавець</a></li>
+							<li><a href="#">Східниця</a></li>
+							<li><a href="#">Моршин</a></li>
+							<li><a href="#">Закарпаття</a></li>
+							<li><a href="#">Хмельник</a></li>
+							<li><a href="#">Миргород</a></li>
+							<li><a href="#">Сатанів</a></li>
+							<li><a href="#">Карпати</a></li>
+							<li><a href="#">Львів</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="footer-categoty footer-cat">
+						<div class="footer-icon"><img src="images/dest/cat.png" alt="cat"></div>
+						<h5>Категорії</h5>
+						<ul>
+							<li><a href="#">Санаторії та готелі</a></li>
+							<li><a href="#">Тури та екскурсії</a></li>
+							<li><a href="#">Дитячі табори</a></li>
+							<li><a href="#">Підбір туру</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="row justify-content-between development">
+				<span>&#169; Всі Санаторії, <span class="copy-date"></span></span>
+				<a href="#">Дизайн та розробка - <span>LeTarget</span></a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/swiper/swiper.min.js"></script>
 	<script src="js/app.min.js"></script>
 
 </body>
+
 </html>
